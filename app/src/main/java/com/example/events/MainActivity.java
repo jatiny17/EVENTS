@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(MainActivity.this, "Event Added Successfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(MainActivity.this, "Event Added Successfully :)", Toast.LENGTH_SHORT).show();
                                 } else {
                                     Toast.makeText(MainActivity.this, "Error", Toast.LENGTH_SHORT).show();
                                 }

@@ -70,6 +70,7 @@
             android:id="@+id/button_next"
             />
 
+
     </LinearLayout>
 
 </LinearLayout>
