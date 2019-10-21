@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">EVENTS</string>
     <string name="event_list">EVENT LIST</string>
+
+    <string name="nameerror">Enter a valid Event Name</string>
+    <string name="dateerror">Enter a valid Date</string>
+    <string name="timeerror">Enter a  valid Time</string>
+    <string name="locationerror">Location must not be empty </string>
+    <string name="descerror">Description must not be empty </string>
+
 </resources>

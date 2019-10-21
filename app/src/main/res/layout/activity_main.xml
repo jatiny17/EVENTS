@@ -17,11 +17,11 @@
         />
 
     <EditText
+        android:id="@+id/event_date"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Event Date"
-        android:textSize="20sp"
-        android:id="@+id/event_date"/>
+        android:hint="Event Date "
+        android:textSize="20sp" />
 
     <EditText
         android:layout_width="match_parent"
