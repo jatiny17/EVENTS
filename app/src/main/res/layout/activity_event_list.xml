@@ -7,4 +7,11 @@
     tools:context=".EventList"
     android:id="@+id/listView">
 
+<!--    <view class="androidx.appcompat.app.AlertController$RecycleListView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/recycle_view">-->
+
+<!--    </view>-->
+
 </ListView>

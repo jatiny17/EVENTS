@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".event_details"></activity>
+        <activity android:name=".RecyclerList"></activity>
+        <activity android:name=".event_details" />
         <activity
             android:name=".EventList"
             android:label="@string/event_list" />

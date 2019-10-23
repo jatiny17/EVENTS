@@ -30,11 +30,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Button b1,b2;
+        final Button b1,b2,b3;
         final EditText e1,e2,e3,e4,e5;
 
         b1=(Button)findViewById(R.id.button_submit);
         b2=(Button)findViewById(R.id.button_next);
+        b3=(Button)findViewById(R.id.button2);
 
         e1=(EditText)findViewById(R.id.event_name);
         e2=(EditText)findViewById(R.id.event_date);
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         awesomeValidation.addValidation(MainActivity.this, R.id.event_name, "^[A-Za-z\\s]{1,}[\\.]{0,1}[A-Za-z\\s]{0,}$", R.string.nameerror);
         awesomeValidation.addValidation(MainActivity.this, R.id.event_date, "^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$", R.string.dateerror);
-//        awesomeValidation.addValidation(MainActivity.this, R.id.event_time, "\\b((1[0-2]|0?[0-9]):([0-5][0-9]) ([AaPp][Mm]))", R.string.timeerror);
+        awesomeValidation.addValidation(MainActivity.this, R.id.event_time, "\\b((1[0-2]|0?[0-9]):([0-5][0-9]) ([AaPp][Mm]))", R.string.timeerror);
 
 //      awesomeValidation.addValidation(MainActivity.this,R.id.event_location,,R.string.locationerror);
 //      awesomeValidation.addValidation(MainActivity.this,R.id.event_description,,R.string.descerror);
@@ -94,6 +95,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(MainActivity.this,EventList.class);
+                startActivity(i);
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(MainActivity.this,RecyclerList.class);
                 startActivity(i);
             }
         });

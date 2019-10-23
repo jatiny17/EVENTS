@@ -3,6 +3,8 @@ package com.example.events;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -29,7 +31,19 @@ public class EventList extends AppCompatActivity {
         setContentView(R.layout.activity_event_list);
 
         final ArrayList<Event> arrayList=new ArrayList<Event>();
+//
+//        arrayList.add(new Event("name","10-10-2009","12:00 am","asdfghjk","asdfghjk"));
+//        arrayList.add(new Event("name","10-10-2009","12:00 am","asdfghjk","asdfghjk"));
+//        arrayList.add(new Event("name","10-10-2009","12:00 am","asdfghjk","asdfghjk"));
+//        arrayList.add(new Event("name","10-10-2009","12:00 am","asdfghjk","asdfghjk"));
+//
+//        RecyclerView recyclerView=findViewById(R.id.recycle_view);
+//        final Recycler_adapter recycler_adapter=new Recycler_adapter(arrayList, this);
+//
+//        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        recyclerView.setAdapter(recycler_adapter);
 
+//
         final EventAdapter eventAdapter=new EventAdapter(this,arrayList);
 
         ListView lv=(ListView)findViewById(R.id.listView);
@@ -62,8 +76,8 @@ public class EventList extends AppCompatActivity {
             public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                 Event e=dataSnapshot.getValue(Event.class);
                 arrayList.add(e);
-
-                eventAdapter.notifyDataSetChanged();
+//                recycler_adapter.notifyDataSetChanged();
+                  eventAdapter.notifyDataSetChanged();
             }
 
             @Override
